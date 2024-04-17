@@ -25,12 +25,12 @@ const App = () => {
 
 
        {/******* * Responsive Code ****/}
-      {/* <Nav/> 
+       {/* <Nav/>  */}
 
-      <Signup/>
+    {/*    <Signup/>  */}
      
-      <Footer/>*/}
-       <Grid/>
+       <Footer/>
+     {/* ?  <Grid/> */}
       
     </div>
   );
