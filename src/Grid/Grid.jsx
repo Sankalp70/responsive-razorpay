@@ -16,7 +16,7 @@ const Grid = () => {
       </div>
       <div className={gridstyles.gridContainer}>
         <div className={gridstyles.card}>
-          <img src={paymentrequest} style={{ width: "165px" }} alt="Image1" />
+          <img src={gateway} style={{ width: "165px" }} alt="Image1" />
           <b>ON WEBSITE/APP</b>
           <h4>
             Payment Gateway
