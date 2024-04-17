@@ -10,6 +10,7 @@ import Responsive from "./components/Responsive/Responsive";
 import Grid from "./Grid/Grid";
 import Nav from "./components/MobileNavbar/Nav";
 import Signup from "./components/Signup/Signup";
+import Component from "./components/Component/Component";
 
 const App = () => {
   return (
@@ -25,12 +26,13 @@ const App = () => {
 
 
        {/******* * Responsive Code ****/}
-       {/* <Nav/>  */}
+        <Nav/> 
 
-    {/*    <Signup/>  */}
-     
+        <Signup/> 
+        <Grid/> 
+        <Component/>
        <Footer/>
-     {/* ?  <Grid/> */}
+    
       
     </div>
   );

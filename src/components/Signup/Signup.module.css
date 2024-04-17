@@ -1,7 +1,7 @@
 .mainContainer {
   margin-top: 1.3rem;
   margin: 1.3rem;
-  background-color: rgb(246, 243, 243);
+  background-color: #ffffff !important;
 }
 .mainContainer h2 {
   font-weight: 600;
@@ -18,7 +18,7 @@
 
 .required {
   color: red;
-  margin-left: 5px; /* Add some space between the label text and the asterisk */
+  margin-left: 5px; 
 }
 
 .features span {
@@ -65,13 +65,14 @@
   color: grey;
 }
 .formContainer img {
-  max-width: 100%;   /* Maximum width of the image is 100% of its container */
-  height: auto;      /* Height is set to auto to maintain aspect ratio */
+  max-width: 100%; /* Maximum width of the image is 100% of its container */
+  height: auto; /* Height is set to auto to maintain aspect ratio */
   margin: 2rem 0 0 2rem;
   filter: saturate(2);
 }
-@media (max-width: 768px) {  /* Adjusts styles for screens smaller than 768px */
+@media (max-width: 768px) {
+  /* Adjusts styles for screens smaller than 768px */
   .formContainer img {
-    margin: 2rem 0;  /* Reduces margin for smaller devices */
+    margin: 2rem 0; /* Reduces margin for smaller devices */
   }
 }
