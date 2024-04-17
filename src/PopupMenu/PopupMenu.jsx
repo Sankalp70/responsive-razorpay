@@ -45,9 +45,9 @@ const PopupMenu = () => {
                         </div>
                         <h2 className={styles.suite}>RAZORPAY X-BANKING SUITE</h2>
                         <ul>
-                            <li><CiBank/>Current Accounts</li>
-                            <li><IoNewspaperOutline/> Vendor Payments</li>
-                            <li><TiDownloadOutline/>Payroll</li>
+                            <li><CiBank className={styles.icon}/>Current Accounts</li>
+                            <li><IoNewspaperOutline className={styles.icon}/> Vendor Payments</li>
+                            <li><TiDownloadOutline className={styles.icon}/>Payroll</li>
                             
                         </ul>
                         <h5>Explore Banking Suite</h5>
@@ -57,7 +57,7 @@ const PopupMenu = () => {
                             <li><IoPeopleOutline/>Partners</li>
                             <li><BiSupport/>Support</li>
                         </ul>
-                        <button className={styles.loginButton}>Login</button>
+                        <button className={styles.loginButton}>Log In</button>
                     </div>
                 </div>
             )}
