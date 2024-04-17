@@ -11,6 +11,8 @@ import Grid from "./Grid/Grid";
 import Nav from "./components/MobileNavbar/Nav";
 import Signup from "./components/Signup/Signup";
 import Component from "./components/Component/Component";
+import Click from "./PopupMenu/Click";
+
 
 const App = () => {
   return (
@@ -25,13 +27,15 @@ const App = () => {
        <Footer /> */}
 
 
-       {/******* * Responsive Code ****/}
+       {/******* * Responsive Code
         <Nav/> 
-
-        <Signup/> 
+                <Signup/> 
         <Grid/> 
         <Component/>
-       <Footer/>
+       <Footer/> ****/}
+
+       <Click/>
+    
     
       
     </div>
