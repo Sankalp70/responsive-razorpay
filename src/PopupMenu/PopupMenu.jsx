@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { IoClose, IoMenu } from 'react-icons/io5'; 
+import { IoMenu } from 'react-icons/io5'; 
 import styles from './Popupmenu.module.css'; 
 import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { TbArrowsDoubleNeSw } from "react-icons/tb";
@@ -27,7 +27,7 @@ const PopupMenu = () => {
             {isOpen && (
                 <div className={styles.popupMenu}>
                     <div className={styles.popupMenuContent}>
-                        <button className={styles.closeButton} onClick={() => setIsOpen(true)}>
+                        <button className={styles.closeButton} onClick={() => setIsOpen(false)}>
                             <RxCross1 size={24} />
                         </button>
                         <h2>PAYMENTS</h2>
