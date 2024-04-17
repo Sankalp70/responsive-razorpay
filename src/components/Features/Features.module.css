@@ -1,0 +1,393 @@
+.mainContainer {
+  position: relative;
+  top: 36rem;
+  height: 92.4vh;
+  width: 100%;
+}
+
+.heading {
+  position: relative;
+  bottom: 47rem;
+  padding-left: 12rem;
+}
+.heading h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.iconContainer {
+  display: flex;
+}
+.icons {
+  position: relative;
+  bottom: 55rem;
+  padding-left: 71rem;
+}
+.icon {
+  font-size: 3rem;
+  margin: 0 1rem;
+}
+.icon {
+  font-size: 2rem;
+}
+
+.bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.cardContainer {
+  position: relative;
+  bottom: 50rem;
+  width: 120%;
+  height: 50vh;
+  right: 11rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.cardButtons {
+  display: flex;
+  justify-content: center;
+  padding-top: 5.23rem;
+  margin-bottom: 2rem;
+}
+
+.cardButtons button {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  right: 26.24rem;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 5px 10px;
+}
+
+.cardButtons button.active {
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.cardContent {
+  position: relative;
+}
+
+.cardContent img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.overlay {
+  position: absolute;
+  top: 3rem;
+  left: 2rem;
+  width: 50%;
+  height: 87%;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.overlayContent {
+  text-align: center;
+  color: black;
+}
+
+.overlayContent h2 {
+  position: relative;
+  bottom: 5.2rem;
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+
+.overlayContent p {
+  position: relative;
+  bottom: 4rem;
+  font-size: 1.1rem;
+  color: gray;
+}
+.overlayContent img {
+  position: relative;
+  right: 12.34rem;
+}
+
+.overlay button {
+  position: relative;
+  top: 5rem;
+  right: 14.11rem;
+  font-size: 1.2rem;
+}
+.overlayContent button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.overlayContent button:hover {
+  background-color: #0056b3;
+}
+
+.cardContent:hover .overlay {
+  opacity: 1;
+}
+/*****************************Card Container*****************************************/
+.featureCard {
+  position: relative;
+  bottom: 21rem;
+  width: 100%;
+  height: 125vh;
+  background-color: #f5f5f5;
+  
+}
+.header {
+  padding-left: 12.21rem;
+  padding-top: 9.4rem;
+}
+.header h1 {
+  font-weight: 600;
+}
+
+/******************************************************Card Container**********************************************************/
+
+.cardContainers {
+  position: relative;
+  top: 53rem;
+  width: 100%;
+  display: flex;
+  border-radius: 5px;
+  height: 200px; /* Set a fixed height for the card */
+}
+
+
+
+
+/* Features.module.css */
+
+.cardContainers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card80 {
+  position: absolute;
+  width: 78%;
+  height: 70vh;
+  bottom: 26.2rem;
+  left: 12rem;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.card80::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border: 10px solid #f5f5f5;
+  left: 75%;
+  width: 2px;
+  background-color: #ccc;
+  transform: translateX(-50%);
+}
+
+.cardContents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+.cardContents b {
+  position: relative;
+  bottom: 9.2rem;
+  left: 56rem;
+  font-size: 1.5rem;
+}
+.cardContents h2 {
+  position: relative;
+  top: 11.53rem;
+  left: 2.65rem;
+  color: grey;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.cardContents p {
+  position: relative;
+  top: 14.8rem;
+  left: 2.1rem;
+  font-size: 2.6rem;
+  white-space: pre-line;
+}
+.cardContents h4 {
+  position: relative;
+  top: 18.6rem;
+  left: 2.2rem;
+  color: gray;
+  font-size: 1.2rem;
+}
+.cardContents h3{
+  position: relative;
+  left: 77rem;
+  font-size: 1.5rem;
+  bottom: 15.3rem;
+}
+.cardContents h1{
+  position: relative;
+  left: 63rem;
+  bottom: 17.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: gray;
+}
+.cardContents h5{
+  position: relative;
+  left: 62.8rem;
+  bottom: 13.7rem;
+  font-size: 1.9rem;
+  white-space: pre-line;
+}
+.cardContents footer{
+  position: relative;
+  left: 63.1rem;
+  bottom: 10.6rem;
+  color: grey;
+  font-weight: 500;
+  white-space:pre-line;
+}
+.SignupBtn {
+  position: relative;
+  top: 18.34rem;
+  left: 1.8rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  padding: 5px 11px 5px 11px;
+  border-radius: 3px;
+}
+
+.knowMore{
+  position: relative;
+  font-size: 1rem;
+  top: 16.64rem;
+  color: #007bff;
+  font-weight: 600;
+  left: 9.7rem;
+
+}
+
+.arrow1 {
+  position: relative;
+  bottom: 38.8rem;
+  background-color: white;
+  border-radius: 50%; /* Use 50% for a circle */
+  width: 36px; /* Set the width and height to the desired size */
+  height: 36px;
+  left: 7.6rem;
+}
+
+.arrow2{
+  position: relative;
+  bottom: 38rem;
+  background-color: white;
+  border-radius: 50%; /* Use 50% for a circle */
+  width: 36px; /* Set the width and height to the desired size */
+  height: 36px;
+  right: 6.8rem;
+}
+/******************************************************************************************************************************/
+
+.wrapper {
+  position: relative;
+  margin-top: 100px;
+  padding-top: 150px;
+  padding-bottom: 1300px;
+  max-width: 700px;
+  background-color: #f4f4f4;;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.card {
+  top: 30px;
+  position: sticky;
+  border: 1px solid #ccc;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  color: #333;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  padding: 0;
+}
+
+.card span {
+  display: block;
+  font-size: 14px;
+  color: #0c4eb9;
+}
+
+.card:nth-child(1n) {
+  top: 1 * 20px;
+}
+
+.card:nth-child(2n) {
+  top: 2 * 20px;
+}
+
+.card:nth-child(3n) {
+  top: 3 * 20px;
+}
+
+.card:nth-child(4n) {
+  top: 4 * 20px;
+}
+
+.card:nth-child(5n) {
+  top: 5 * 20px;
+}
+
+.card:nth-child(6n) {
+  top: 6 * 20px;
+}
+
+.card:nth-child(7n) {
+  top: 7 * 20px;
+}
+
+.card:nth-child(8n) {
+  top: 8 * 20px;
+}
+/***************************************************************Card Component*************************************************************/
