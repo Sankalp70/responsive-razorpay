@@ -14,7 +14,7 @@ import { CiPercent } from "react-icons/ci";
 import { MdOutlineMenuBook } from "react-icons/md";
 import { IoPeopleOutline } from "react-icons/io5";
 import { BiSupport } from "react-icons/bi";
-
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 const PopupMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -28,16 +28,17 @@ const PopupMenu = () => {
                 <div className={styles.popupMenu}>
                     <div className={styles.popupMenuContent}>
                         <button className={styles.closeButton} onClick={() => setIsOpen(false)}>
-                            <RxCross1 size={24} />
+                            <RxCross1 size={24} style={{color:"black"}} />
                         </button>
                         <h2>PAYMENTS</h2>
                         <ul>
-                            <li><HiOutlineDesktopComputer/>Payment Gateway</li>
-                            <li><TbArrowsDoubleNeSw/>Payment Links</li>
-                            <li><MdSmartButton/>Payment Buttons</li>
+                            <li><HiOutlineDesktopComputer className={styles.icon}/>Payment Gateway</li>
+                            <li><TbArrowsDoubleNeSw className={styles.icon}/>Payment Links</li>
+                            <li><MdSmartButton className={styles.icon}/>Payment Buttons</li>
                            
                         </ul>
                         <p>Explore Payment Suite<MdOutlineKeyboardArrowRight /></p>
+                        <hr className={styles.line}/>
                          <div className={styles.container}>
                         <h3>Not sure which product to choose?</h3>
                        
@@ -50,12 +51,13 @@ const PopupMenu = () => {
                             <li><TiDownloadOutline className={styles.icon}/>Payroll</li>
                             
                         </ul>
-                        <h5>Explore Banking Suite</h5>
-                        <ul>
-                            <li><CiPercent/>Pricing</li>
-                            <li><MdOutlineMenuBook/>Resources</li>
-                            <li><IoPeopleOutline/>Partners</li>
-                            <li><BiSupport/>Support</li>
+                        <h5>Explore Banking Suite<MdKeyboardArrowRight/></h5>
+                        <hr className={styles.line}/>
+                        <ul className={styles.feat}>
+                            <li><CiPercent className={styles.icon} style={{backgroundColor:"#f8efba", color:"#e47615"}}/>Pricing<MdKeyboardArrowRight/></li>
+                            <li><MdOutlineMenuBook className={styles.icon}/>Resources<MdKeyboardArrowRight/></li>
+                            <li><IoPeopleOutline className={styles.icon}/>Partners<MdKeyboardArrowRight/></li>
+                            <li><BiSupport className={styles.icon}/>Support<MdKeyboardArrowRight/></li>
                         </ul>
                         <button className={styles.loginButton}>Log In</button>
                     </div>

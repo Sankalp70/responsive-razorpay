@@ -38,11 +38,21 @@
 }
 .popupMenuContent p{
   font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 2.3rem;
   color: #0855a8;
 }
 .popupMenuContent h3{
   margin-top: 4rem;
   font-size: 1rem;
+}
+.popupMenuContent h5{
+   font-size: 1rem;
+   margin-top: 1rem;
+   margin-bottom: 2rem;
+   font-weight: 600;
+   color: #0855a8;
+
 }
 .closeButton {
   position: absolute;
@@ -53,8 +63,11 @@
   cursor: pointer;
 }
 .container{
+  position: relative;
+  bottom: 3.2rem;
   background: linear-gradient(51.3deg, rgb(135, 174, 220) 1.5%, rgb(255, 255, 255) 100.3%);
    padding-left: 4rem;
+   margin-top: 4rem;
    padding-bottom: 1rem;
    position: relative; /* Ensure positioning context for shadow */
    box-shadow: 0 6px 6px -6px #000;
@@ -73,7 +86,7 @@
   font-size: 1rem;
 }
 .suite{
-  padding-top: 4rem;
+ 
 }
 .loginButton{
   width: 100%;
@@ -90,8 +103,23 @@ button {
   cursor: pointer;
   text-align: center;
   margin-top: 10px;
+ 
 }
-
+.icon{
+  background-color: #0855a8;
+  color: white;
+  margin: 0.4rem;
+  font-size: 1.3rem;
+  margin-right: 1rem;
+  border-radius: 50px;
+}
+.feat li{
+  color: #0855a8;
+}
+.line{
+  width: 100vw;
+  margin-right: 4rem ;
+}
 @media (max-width: 768px) {
   .popupMenuContent {
     width: 100%;
