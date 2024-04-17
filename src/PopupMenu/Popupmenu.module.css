@@ -40,6 +40,10 @@
   font-weight: 600;
   color: #0855a8;
 }
+.popupMenuContent h3{
+  margin-top: 4rem;
+  font-size: 1rem;
+}
 .closeButton {
   position: absolute;
   top: 10px;
@@ -48,11 +52,28 @@
   background: none;
   cursor: pointer;
 }
+.container{
+  background: linear-gradient(51.3deg, rgb(135, 174, 220) 1.5%, rgb(255, 255, 255) 100.3%);
+   padding-left: 4rem;
+   padding-bottom: 1rem;
+   position: relative; /* Ensure positioning context for shadow */
+   box-shadow: 0 6px 6px -6px #000;
+}
+.container h3{
+  padding-top: 1.4rem;
+  padding-right: 1.5rem;
+  font-weight: 600;
+  font-size: 0.87rem;
+}
 .btn{
+  background: transparent;
   border: 2px solid  #0855a8;
   padding-left: 1rem;
   padding-right: 1rem;
   font-size: 1rem;
+}
+.suite{
+  padding-top: 4rem;
 }
 .loginButton,
 button {
