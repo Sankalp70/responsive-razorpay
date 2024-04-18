@@ -1,7 +1,9 @@
+
 .hamburger {
   top: 10px;
   left: 10px;
   cursor: pointer;
+  border: none;
 }
 
 .popupMenu {
@@ -31,28 +33,27 @@
   flex-direction: column;
   gap: 1.25rem;
 }
-.popupMenuContent h2{
+.popupMenuContent h2 {
   font-size: 0.9rem;
   font-weight: 600;
   color: grey;
 }
-.popupMenuContent p{
+.popupMenuContent p {
   font-weight: 600;
   margin-top: 1rem;
   margin-bottom: 2.3rem;
   color: #0855a8;
 }
-.popupMenuContent h3{
+.popupMenuContent h3 {
   margin-top: 4rem;
   font-size: 1rem;
 }
-.popupMenuContent h5{
-   font-size: 1rem;
-   margin-top: 1rem;
-   margin-bottom: 2rem;
-   font-weight: 600;
-   color: #0855a8;
-
+.popupMenuContent h5 {
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: #0855a8;
 }
 .closeButton {
   position: absolute;
@@ -62,33 +63,42 @@
   background: none;
   cursor: pointer;
 }
-.container{
+
+.container {
   position: relative;
   bottom: 3.2rem;
-  background: linear-gradient(51.3deg, rgb(135, 174, 220) 1.5%, rgb(255, 255, 255) 100.3%);
-   padding-left: 4rem;
-   margin-top: 4rem;
-   padding-bottom: 1rem;
-   position: relative; /* Ensure positioning context for shadow */
-   box-shadow: 0 6px 6px -6px #000;
+  background: linear-gradient(
+    51.3deg,
+    rgb(135, 174, 220) 1.5%,
+    rgb(255, 255, 255) 100.3%
+  );
+  padding-left: 4rem;
+  margin-top: 4rem;
+  padding-bottom: 1rem;
+  position: relative; /* Ensure positioning context for shadow */
+  box-shadow: 0 6px 6px -6px #000;
 }
-.container h3{
+.container h3 {
   padding-top: 1.4rem;
   padding-right: 1.5rem;
   font-weight: 600;
   font-size: 0.87rem;
 }
-.btn{
+.btn {
   background: transparent;
-  border: 2px solid  #0855a8;
+  border: 2px solid #0855a8;
   padding-left: 1rem;
   padding-right: 1rem;
   font-size: 1rem;
 }
-.suite{
- 
+.hamburger {
+  position: relative !important;
+  margin: -1rem !important;
+  left: 0.92rem;
+  color: gray !important;
+  border: none !important;
 }
-.loginButton{
+.loginButton {
   width: 100%;
   background-color: #0855a8;
   color: white;
@@ -96,16 +106,14 @@
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
 }
-button {
+.popupMenuContent button {
   background-color: white;
   color: #0855a8;
-  border: 3px soild #0855a8;
   cursor: pointer;
   text-align: center;
   margin-top: 10px;
- 
 }
-.icon{
+.icon {
   background-color: #0855a8;
   color: white;
   margin: 0.4rem;
@@ -113,12 +121,15 @@ button {
   margin-right: 1rem;
   border-radius: 50px;
 }
-.feat li{
+.feat li {
   color: #0855a8;
 }
-.line{
+.line {
   width: 100vw;
-  margin-right: 4rem ;
+  margin-right: 4rem;
+}
+.closeButton button {
+  border: none !important;
 }
 @media (max-width: 768px) {
   .popupMenuContent {

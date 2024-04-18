@@ -27,15 +27,14 @@ const App = () => {
        <Footer /> */}
 
 
-       {/******* * Responsive Code
+       {/******* * Responsive Code****/}
+
         <Nav/> 
                 <Signup/> 
         <Grid/> 
         <Component/>
-       <Footer/> ****/}
-
-       <Click/>
-    
+       <Footer/> 
+      
     
       
     </div>

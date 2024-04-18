@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import navstyles from "./nav.module.css";
 import razorpay from "../../assets/razorpay.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
+import Click from "../../PopupMenu/Click";
 
 const Nav = () => {
   return (
@@ -13,7 +14,7 @@ const Nav = () => {
         <button>Login</button>
         <div className={navstyles.hamburger}>
           <div className={navstyles.icon}>
-            <GiHamburgerMenu style={{ backgroundColor: "white" }} />
+           <Click/> 
           </div>
         </div>
       </div>
