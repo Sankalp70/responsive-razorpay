@@ -149,17 +149,18 @@
   .popupMenuContent {
     width: 80%;
     height: 100%;
-    border-radius: 0; 
-    margin-left: auto; 
+    border-radius: 0; /* Removes any border rounding on smaller devices */
+    margin-left: auto; /* Push content to the right */
     margin-right: 0;
-    animation: slideLeft 0.57s forwards; 
+    animation: slideLeft 0.6s forwards; /* Align to the right */
   }
 
   .hamburger {
-    display: block; 
+    display: block; /* Ensure hamburger is always visible on mobile */
+  }
 
   .popupMenu {
-    background-color: rgba(0, 0, 0, 0.4); 
+    background-color: rgba(0, 0, 0, 0.4); /* Light black background for better visibility */
   }
 }
 
