@@ -25,14 +25,15 @@ const PopupMenu = () => {
         <GiHamburgerMenu className={menu.click}/>
       </button>
       {isOpen && (
-        <div className={menu.popupMenu}>
+        <div key={isOpen} className={menu.popupMenu} style={{ display: isOpen ? 'flex' : 'none' }}>
+
           <div className={menu.popupMenuContent}>
-            <button
+            <span
               className={menu.closeButton}
               onClick={() => setIsOpen(false)}
             >
-              <RxCross1 size={24} style={{ color: "black" }} />
-            </button>
+              <RxCross1 size={24}/>
+            </span>
             <h2>PAYMENTS</h2>
             <ul>
               <li>

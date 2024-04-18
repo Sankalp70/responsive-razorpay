@@ -17,6 +17,7 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  display: none;
 }
 
 .popupMenuContent {
@@ -100,8 +101,8 @@
 }
 .loginButton {
   width: 100%;
-  background-color: #0855a8;
-  color: white;
+  background-color: #0855a8 !important;
+  color: white !important;
   font-size: 1rem;
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
@@ -128,17 +129,39 @@
   width: 100vw;
   margin-right: 4rem;
 }
-.closeButton button {
-  border: none !important;
+.closeButton span{
+  padding-left: 2rem;
+  color: gray ;
 }
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%); /* Start from the right, outside of the view */
+  }
+  to {
+    transform: translateX(0); /* End at the normal position */
+  }
+}
+
+
+
+
 @media (max-width: 768px) {
   .popupMenuContent {
-    width: 100%;
+    width: 80%;
     height: 100%;
-    border-radius: 0; /* Make popup full screen on smaller devices */
+    border-radius: 0; /* Removes any border rounding on smaller devices */
+    margin-left: auto; /* Push content to the right */
+    margin-right: 0;
+    animation: slideLeft 0.57s forwards; /* Align to the right */
   }
 
   .hamburger {
     display: block; /* Ensure hamburger is always visible on mobile */
   }
+
+  .popupMenu {
+    background-color: rgba(0, 0, 0, 0.4); /* Light black background for better visibility */
+  }
 }
+
+
